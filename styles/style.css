@@ -1,0 +1,152 @@
+/* Reset do padrão que vem das Margens */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #22D4FD;
+    --cor-terciaria: #F6F6F6;
+    /* 
+    para criar variaveis e criar os estilos mais rapidos
+    para fonte é só repetir o mesmo 
+
+    --fonte-principal: 'Krona One', sans-serif;
+    
+    mudar onde vai ser usado cada fonte 
+    
+    */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    
+    box-sizing: border-box; /* Deixa a imagem dentro do corpo do Pai, não vai sair fora da margem*/
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+}
+
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__link{
+    font-family: 'Montserrat' sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+
+
+.titulo-destaque{
+    color: var(--cor-secundaria);
+}
+
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+    height: auto;
+}
+
+.conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: "Krona One", sans-serif;
+}
+
+.conteudo__p{
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.imagem__principal{
+    width: 50%;
+}
+
+.conteudo__botao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.subtitulo__botao{
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.conteudo__link{
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color:var(--cor-terciaria);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    border: 2px solid var(--cor-secundaria);
+    gap: 16px;
+    
+
+}
+
+.conteudo__link:hover{
+    background-color: #272727;
+}
+
+.rodape{
+    
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    padding: 24px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1200px){
+    
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .conteudo{
+        width: auto;
+    }
+
+    
+}
