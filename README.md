@@ -1,16 +1,83 @@
-# React + Vite
+# Portfólio - React + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é meu portfólio pessoal desenvolvido com foco em boas práticas de organização, escalabilidade e estrutura moderna de frontend.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- TypeScript
+- Vite
+- TailwindCSS
+- Node.js (planejado para futuras integrações)
 
-## React Compiler
+## Objetivo do Projeto
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O objetivo foi construir um portfólio não apenas visual, mas estruturado como uma aplicação real, considerando:
 
-## Expanding the ESLint configuration
+- Organização por componentes
+- Separação de responsabilidades
+- Estrutura escalável
+- Preparação para integração com backend
+- Build otimizado para produção
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Estrutura do Projeto
+
+```
+src/
+ ├── components/
+ ├── pages/
+ ├── assets/
+ ├── styles/
+```
+
+A estrutura foi organizada visando manutenção futura e crescimento do projeto.
+
+## Build para Produção
+
+Para gerar a versão de produção:
+
+```bash
+npm run build
+```
+
+O Vite gera a pasta `dist/`, que contém os arquivos otimizados para deploy.
+
+## Deploy
+
+A aplicação foi publicada em domínio próprio, envolvendo:
+
+- Geração do build de produção
+- Configuração de hospedagem
+- Apontamento de DNS
+- Validação pós-deploy
+
+## Rodando Localmente
+
+Clone o repositório:
+
+```bash
+git clone [LINK_DO_REPOSITORIO]
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Execute o projeto:
+
+```bash
+npm run dev
+```
+
+## Próximos Passos
+
+- Integração com backend em Node.js
+- Implementação de novas seções
+- Melhorias de performance
+- Possível sistema de contato com API própria
+
+---
+
+Projeto desenvolvido para consolidar conhecimentos em React, TypeScript e processo de deploy em ambiente real.
